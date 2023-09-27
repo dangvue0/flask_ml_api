@@ -51,8 +51,6 @@ def predict():
 
 
 # ADDING NEW ENDPOINT
-#     curl -X POST localhost:5000/api/proba -H "Content-type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5NTc1MzA5NCwianRpIjoiZTIzZDVhYWUtYTBhMi00OWRmLWE0NWUtNTNhY2IxZDNiOTEzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImRhbmciLCJuYmYiOjE2OTU3NTMwOTQsImV4cCI6MTY5NTc1Mzk5NH0.HKv1kYnEMwL6fVZC6UDKpll-J8S3U9FKZBEOHTk2tac" -d "{\"Sepal_Length\" : 5.1, \"Sepal_Width\" : 3.5, \"Petal_Length\" : 1.4, \"Petal_Width\" : 0.2}" 
-
 @app.route('/api/proba', methods=['POST'])
 @jwt_required()
 def proba():

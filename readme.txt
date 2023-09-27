@@ -1,0 +1,3 @@
+curl -X POST http://127.0.0.1:5000/login -H "Content-type: application/json" -d "{\"username\" : \"dang\", \"password\" : \"vue\"}"
+
+curl -X POST localhost:5000/api/proba -H "Content-type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5NTgzNzAzNywianRpIjoiNjIzMDhiYTMtZDBkNy00N2JjLTg0NWEtODdlMzZiZDBhYjk0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImRhbmciLCJuYmYiOjE2OTU4MzcwMzcsImV4cCI6MTY5NTgzNzkzN30.96Hmt51IiQxYT-Th4cL_nQV94bgb76-JZl_2-xX1UNU" -d "{\"Sepal_Length\" : 5.1, \"Sepal_Width\" : 3.5, \"Petal_Length\" : 1.4, \"Petal_Width\" : 0.2}" 
