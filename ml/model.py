@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 import pickle
 
@@ -22,7 +22,7 @@ X_train = sc.fit_transform(X_train)
 X_test= sc.transform(X_test)
 
 # Instantiate the model
-classifier = RandomForestClassifier()
+classifier = GradientBoostingClassifier()
 
 # Fit the model
 classifier.fit(X_train, y_train)
