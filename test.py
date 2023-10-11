@@ -7,11 +7,11 @@ data = {
 "ip_address" : "192.168.0.1"
 }
 
-p = ParseData()
-p1 = p.parse_screen_res(data)
-p2 = p.parse_email(data)
-p3 = p.parse_ip(data)
+p = ParseData(data)
+p1 = p.parse_screen_res()
+p2 = p.parse_email()
+p3 = p.parse_ip()
 print(p1, type(p1), p2, type(p2), p3, type(p3))
 
-pAll = ParseData().parse(data)
+pAll = ParseData(data).parse()
 print(pAll)
